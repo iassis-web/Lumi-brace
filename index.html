@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#d9effb"><link rel="manifest" href="manifest.webmanifest">
+<title>Lumi Brace</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header><div><h1>Lumi Brace</h1><p>Seu progresso, no seu ritmo</p></div><span>☁️ ✦</span></header>
+  <section class="progress"><div class="ring"><strong id="wear">0:00</strong><small>com colete</small></div><p>Meta diária: <input id="goal" type="number" min="1" max="24" step=".5" value="18"> h</p></section>
+  <section class="actions"><button id="wearBtn">✓ Colocar colete</button><button id="breakBtn">Ⅱ Retirar colete</button></section>
+  <section class="summary"><h2>Resumo de hoje</h2><p>Tempo sem colete: <b id="off">0:00</b></p><p>Pausas: <b id="pauses">0</b></p></section>
+  <section class="note"><h2>Observações</h2><textarea id="note" placeholder="Escreva uma observação..."></textarea><button id="saveNote">Salvar observação</button></section>
+  <section class="history"><h2>Histórico</h2><ul id="history"></ul></section>
+  <section class="account"><h2>Conta</h2><input id="email" type="email" placeholder="E-mail"><input id="password" type="password" placeholder="Senha"><button id="signup">Criar conta</button><button id="signin">Entrar</button><button id="signout">Sair</button><p id="message"></p></section>
+  <footer>Início · Histórico · Estatísticas · Perfil</footer>
+</main>
+<script src="config.js"></script><script type="module" src="app.js"></script>
+</body></html>
